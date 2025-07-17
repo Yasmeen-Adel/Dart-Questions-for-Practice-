@@ -1,29 +1,32 @@
 import 'dart:io';
 
 void main() {
-  /*[1] What is the purpose of the ? operator in Dart null safety?
+  /*[1] What is the purpose of the ? operator in Dart null safety? 
 --> it's make the variable nullable 
+--> num can be (null, int);
+*/
 int? num;
-num can be (null, int);
- */
+print(num);
 
-  /*[2] Create a late variable named address, assign a US value to it and print it.
 
- late String name;
-  name = 'Yasmeen';
-  print('Name is : $name');
+  /*[2] Create a late variable named address, assign a US value to it and print it.*/
 
- */
+ late String address;
+  address = 'US';
+  print('Address is : $address');
 
-  /*[3] How do you declare a nullable type in Dart null safety?
-int ?num=null; //interger type
+ 
 
- */
+  /*[3] How do you declare a nullable type in Dart null safety?*/
+int? nullNum=null; //interger type
+  print(nullNum); //NULL
 
-  /*[4] Write a program in a dart to create an age variable and assign a null value to it using ?.
+ 
+
+  /*[4] Write a program in a dart to create an age variable and assign a null value to it using ?.*/
 int ?age=null;
 print('age is $age');
- */
+
 
   /*[5] Write a function that accepts a nullable int parameter and returns 0 if the value is null using null coalescing operator ??.
 
